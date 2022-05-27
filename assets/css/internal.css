@@ -1,82 +1,92 @@
 @import url('./reset.css');
 @import url('./global.css');
 
+@import url('components/_navigator.css');
+@import url('components/_pills.css');
+@import url('components/_link-button.css');
+@import url('components/_gallery.css');
+@import url('components/_spider-index.css');
+
 .s-wrapper {
     display: flex;
     height: 100vh;
     flex-flow: row nowrap;
-    background-color: aqua;
+}
+
+.s-wrapper video {
+    position: fixed;
+    width: 100%;
+    z-index: -100;
 }
 
 .s-wrapper .s-left-column {
     width: 10rem;
     height: 100%;
-    background-color: black;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.s-wrapper .s-left-column .navigator {
-    height: 80vh;
-    width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    position: relative;
-}
-
-.s-wrapper .s-left-column .navigator::before {
-    content: '';
-    position: absolute;
+    position: fixed;
+    left: 0;
     top: 0;
-    
-    width: 2px;
-    height: 100%;
 
-    background-color: #FFF;
-    z-index: 0;
-}
-
-.s-wrapper .s-left-column .navigator .navigator__icon {
-    position: absolute;
-    top: -2rem;
-}
-
-.s-wrapper .s-left-column .navigator ul {
+    padding-left: 5rem;
     z-index: 1;
-}
-
-.s-wrapper .s-left-column .navigator ul li:nth-child(2) {
-    margin-block: 6rem;
-}
-
-.s-wrapper .s-left-column .navigator ul li a {
-    width: 45px;
-    height: 45px;
-
-    background-color: black;
-    border: 2px solid #FFF;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.s-wrapper .s-left-column .navigator ul li a:hover,
-.s-wrapper .s-left-column .navigator ul li a.active {
-    color: var(--primary-color);
-    background-color: #FFF;
 }
 
 .s-wrapper .s-main-content {
     height: 100%;
     width: 100%;
-    background-color: gray;
-    padding-left: 30px;
+    padding-inline: 13rem 25rem;
 }
+
+
+.s-wrapper .s-main-content__top {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.s-wrapper .s-main-content__bottom {
+    height: 20vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.s-wrapper .s-main-content .s-logo img {
+    margin-block: 5rem 3rem;
+    margin-left: 0;
+}
+
+.s-wrapper .s-main-content__top .s-description .pills {
+    margin-bottom: 2rem;
+}
+
+.s-wrapper .s-main-content__top .s-description {
+    background-color: rgba(0,0,0,.7);
+    max-width: 50%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+ .s-wrapper .s-main-content__top .s-description .s-description__text p {
+    color: #FFF;
+    line-height: 170%;
+    font-size: 1.2rem;
+}
+
+.s-wrapper .s-main-content .s-links {
+    padding-block: 2rem;
+}
+
+.s-wrapper .s-main-content .s-links ul {
+    display: flex;
+    flex-direction: row;
+}
+
+

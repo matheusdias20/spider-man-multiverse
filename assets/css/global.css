@@ -3,4 +3,13 @@
 
     --primary-color: #B9001F;
     --bg-color: #333;
+
+    --bg-gradient: linear-gradient(to left, #0D1F2B 50%, #B9001F 50%);
+}
+
+@font-face{
+    font-family:"spider-man-regular";
+    src:url("https://dafonttop.com/wp-data/s/579/7579/file/Spider-Man.otf") format("woff"),
+    url("https://dafonttop.com/wp-data/s/579/7579/file/Spider-Man.otf") format("opentype"),
+    url("https://dafonttop.com/wp-data/s/579/7579/file/Spider-Man.otf") format("truetype");
 }

@@ -1,0 +1,31 @@
+.body-spider {
+    background: var(--bg-gradient);
+}
+
+.s-wrapper .s-left-column .navigator ul li a.s-navigation-index {
+    color: #FFF;
+    background-color: var(--primary-color);
+}
+
+.s-wrapper .s-left-column .navigator ul li a.s-navigation-index:hover {
+    color: var(--primary-color);
+    background-color: #FFF;
+}
+
+.s-main-content .s-man-img {
+    display: block;
+    margin-inline: auto;
+}
+
+.s-main-content .s-man-img img {
+    width: 70vh;
+}
+
+.s-main-content .s-man-img .s-logo-title-img {
+    margin-block: 5rem 2rem;
+}
+
+.s-main-content .s-logo-title h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}

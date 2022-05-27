@@ -1,0 +1,36 @@
+a.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+a.link-button .icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: .3rem;
+    background-color: var(--primary-color);
+    border: 2px solid #FFF;
+    background-clip: content-box;
+    border-radius: 50%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.link-button .icon .play-icon {
+    border: 7px solid #FFF;
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin-right: -1rem;
+}
+
+a.link-button .label {
+    margin-left: 1rem;
+}
